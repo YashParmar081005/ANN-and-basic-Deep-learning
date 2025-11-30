@@ -1,187 +1,56 @@
-📌 1. What is Deep Learning?
+📘 Deep Learning – Basics and  ANN 
 
-A subset of Machine Learning that uses neural networks with many layers (deep).
+A beginner-friendly repository that covers the foundations of Deep Learning, along with practical implementations of Artificial Neural Networks (ANN) and Convolutional Neural Networks (CNN).
+This repo is designed for students, beginners, and developers who want a clear, simple, and structured understanding of DL fundamentals.
 
-Learns patterns from large datasets using representation learning.
+📂 Contents
 
-Good for: Images, audio, text, time series, classification, regression, generation.
+🧠 Deep Learning Basics
 
-🧩 2. Artificial Neural Network (ANN) Basics
-Structure
+🔹 ANN (Artificial Neural Networks)
+🖼️ CNN (Convolutional Neural Networks)
+📄 Code + Notebooks
 
-Input Layer – receives data
 
-Hidden Layers – extract features
 
-Output Layer – prediction
+🧠 1. Deep Learning Basics
 
-Neuron
+This section covers the core fundamentals:
+✔ Key Concepts
+What is Deep Learning?
+Difference between ML vs DL
+Neuron & Neural Network idea
+Layers: Input, Hidden, Output
+Activation Functions: ReLU, Sigmoid, Tanh, Softmax
+Loss Functions: MSE, Cross-Entropy
+Optimizers: SGD, Adam
+Epochs, Batch Size, Learning Rate
+Forward & Backpropagation
 
-Performs:
-Weighted Sum → Add Bias → Activation Function
 
-Equation
-𝑦
-=
-𝑓
-(
-𝑤
-1
-𝑥
-1
-+
-𝑤
-2
-𝑥
-2
-+
-.
-.
-.
-+
-𝑏
-)
-y=f(w
-1
-	​
+🧩 2. ANN – Artificial Neural Networks
 
-x
-1
-	​
+Topics Covered
+✔ Perceptron
+Multilayer Perceptron (MLP)
+Network architecture
+Activation functions in ANN
+How ANN learns (Gradient Descent + Backpropagation)
+Loss calculation
 
-+w
-2
-	​
+✔ANN for Regression & Classification
+ANN Implementations
+ANN using Keras/TensorFlow
+ANN using PyTorch
+ANN with custom activation & custom training loop
 
-x
-2
-	​
-
-+...+b)
-⚡ 3. Activation Functions (Must Know)
-Function	Formula	Use-case
-ReLU	max(0, x)	Hidden layers, fast, reduces vanishing gradient
-Sigmoid	1/(1+e^-x)	Binary classification
-Tanh	(e^x − e^-x)/(e^x + e^-x)	Zero-centered → better than sigmoid
-Softmax	e^x / sum(e^x)	Multiclass outputs
-📈 4. Loss Functions
-Classification
-
-Binary Cross-Entropy
-
-Categorical Cross-Entropy
-
-Regression
-
-MSE (Mean Squared Error)
-
-MAE (Mean Absolute Error)
-
-🏋️‍♂️ 5. Training a Neural Network
-Forward Propagation
-
-Data flows input → hidden → output
-
-Prediction is generated
-
-Loss Calculation
-
-Compare prediction vs actual
-
-Backward Propagation
-
-Calculate gradients
-
-Update weights using gradient descent
-
-Optimization Algorithms
-
-SGD – Simple but slow
-
-Momentum – Faster
-
-Adam – Most used (adaptive learning rates)
-
-🔧 6. Important Hyperparameters
-
-Learning Rate → controls how fast weights update
-
-Epochs → full passes over dataset
-
-Batch Size → samples processed at once
-
-Hidden Layers & Neurons → model capacity
-
-Dropout Rate → prevents overfitting
-
-📉 7. Overfitting & Underfitting
-Overfitting
-
-Model memorizes data.
-Fixes: Regularization, dropout, more data.
-
-Underfitting
-
-Model too simple.
-Fixes: More layers, more epochs.
-
-🏗 8. Types of Neural Networks
-1. CNN (Convolutional Neural Network)
-
-Used for images, videos
-
-Performs convolution → pooling → classification
-
-2. RNN (Recurrent Neural Network)
-
-Used for sequential data: text, time series
-
-Types: LSTM, GRU
-
-3. Autoencoders
-
-Compression + reconstruction
-
-Used for dimensionality reduction & anomaly detection
-
-4. GAN (Generative Adversarial Network)
-
-Generator + Discriminator
-
-Used for image generation, deepfakes
-
-🧪 9. Train/Validation/Test Split
-
-Train (70%)
-
-Validation (15%)
-
-Test (15%)
-
-🧰 10. Deep Learning Workflow
-
-Load data
-
-Normalize/Preprocess
-
-Design ANN architecture
-
-Choose optimizer + loss
-
-Train
-
-Validate
-
-Tune hyperparameters
-
-Test & deploy
-
-⚙️ 11. Popular Frameworks
-
-TensorFlow (Keras)
-
+🧰 Tech Stack
+Python
+TensorFlow / Keras
 PyTorch
+NumPy, Pandas
+Matplotlib / Seaborn
 
-JAX
+Overfitting / Underfitting
 
-FastAI
+Regularization: Dropout, L1/L2, BatchNorm
